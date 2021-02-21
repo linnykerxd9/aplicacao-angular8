@@ -1,27 +1,49 @@
-# CourseManager
+# Minha Primeira aplicação em angular.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.0.
+Seja bem vindo a minha primeira aplicação em angular, aplicação feita no curso 'Introdução' ao angular 8 da Digital Innovation One.
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Instruções para uso:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Starte o server  usando o comando 'node serve.js' no cmd
 
-## Build
+- Depois suba a aplicação com o comando ng serve
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+- Vá para o google e entre no link 'localhost:4200'
 
-## Running unit tests
+- Espero que goste da minha aplicação :happy:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+  
 
-## Running end-to-end tests
+## Nota sobre o servidor :
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+não foi eu que desenvolveu o servidor pois era um curso/aplicação voltado para front-ent por isso o professor disponibilizou um servidor já pronto e eu só mudei algumas coisas que eu queria fazer diferente
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## Nota de problemas:
+
+caso você tenha  um problema de rotas como eu tive, que consiste  na rota default  >> (path: '', redirectTo: 'courses', pathMatch: 'full') não estiver funcionando e na raiz da aplicação(localhost:4200) estiver dando erro 404, é só tirar a rota 404 do core.module e colocar ela no app.module como a rota default e após importar o componente tudo funcionará normalmente. 
+
+- exemplo:
+
+  import { Error404Component } from './core/components/error404/error404.component';
+
+  RouterModule.forRoot([
+
+     {
+
+  ​    path: '', redirectTo: 'courses', pathMatch: 'full'
+
+     },
+
+     {
+
+  ​    path: '**',  component: Error404Component
+
+     }
+
+    ])
+
+  #### Espero ter ajudado :happy: .
