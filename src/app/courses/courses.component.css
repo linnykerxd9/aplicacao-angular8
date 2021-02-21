@@ -1,6 +1,7 @@
-body{
-  background-color: #757575!important;
+#bodyCoursesListComponent{
+  background-color: white!important;
 }
+
 .image-courses{
   width: 150px;
   height: 100px;
