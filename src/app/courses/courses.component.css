@@ -1,0 +1,18 @@
+body{
+  background-color: #757575!important;
+}
+.image-courses{
+  width: 150px;
+  height: 100px;
+}
+tbody tr td:nth-child(3){
+  width: 300px!important;
+}
+#btnEdit{
+  margin-bottom: 20px;
+}
+#tdBtn{
+  display:grid;
+  justify-content: center;
+  align-items: center;
+}

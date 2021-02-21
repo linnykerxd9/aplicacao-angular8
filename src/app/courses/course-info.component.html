@@ -1,0 +1,42 @@
+<h2>Course</h2>
+<hr>
+<form #courseForm='ngForm'  *ngIf="course">
+  <div class="form-groupe row">
+    <label class="col-sm-2 col-form-label">Name</label>
+        <div class="col-sm-5">
+            <input [(ngModel)]='course.name' required name='name' #courseName='ngModel' [ngClass]="{'is-invalid': courseName.invalid}" class="form-control">
+            <div class="invalid-feedback">
+                <span>Course Name is required</span>
+            </div>
+        </div>
+  </div>
+  <div class="form-groupe row">
+    <label class="col-sm-2 col-form-label">Price</label>
+        <div class="col-sm-5">
+            <input [(ngModel)]='course.price' required name='price' type="number" #coursePrice='ngModel' [ngClass]="{'is-invalid': coursePrice.invalid}" class="form-control">
+            <div class="invalid-feedback">
+                <span>Course Price is required</span>
+            </div>
+        </div>
+  </div>
+  <div class="form-groupe row">
+    <label class="col-sm-2 col-form-label">Rating</label>
+        <div class="col-sm-5">
+            <input [(ngModel)]='course.rating' required name='rating' #courseRating='ngModel' [ngClass]="{'is-invalid': courseRating.invalid}" class="form-control">
+            <div class="invalid-feedback">
+                <span>Course Rating is required</span>
+            </div>
+        </div>
+  </div>
+  <div class="form-groupe row">
+    <label class="col-sm-2 col-form-label">Description</label>
+        <div class="col-sm-5">
+            <input [(ngModel)]='course.description' required name='description' #courseDescription='ngModel' [ngClass]="{'is-invalid': courseDescription.invalid}" class="form-control">
+            <div class="invalid-feedback">
+                <span>Course Description is required</span>
+            </div>
+        </div>
+  </div>
+  <button [disabled]="courseForm.invalid" (click)="save()" class="btn btn-primary mr-2">Save</button>
+  <button [routerLink]="['/courses']"class="btn btn-secondary">Back</button>
+</form>

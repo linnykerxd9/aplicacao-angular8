@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'course-manager';
+
+  // tslint:disable-next-line:ban-types
+  name: String = 'Jonas';
 }

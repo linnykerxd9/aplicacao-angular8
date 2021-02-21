@@ -1,0 +1,11 @@
+nav{
+  background-color:#ff5252!important ;
+}
+img{ width:75px}
+a{
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 20px;
+}
+a:hover{
+  color:#616161!important;
+}
