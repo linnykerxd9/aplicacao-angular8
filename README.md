@@ -18,7 +18,7 @@ Seja bem vindo a minha primeira aplicação em angular, aplicação feita no cur
 
 ## Nota sobre o servidor :
 
-não foi eu que desenvolveu o servidor pois era um curso/aplicação voltado para front-ent por isso o professor disponibilizou um servidor já pronto e eu só mudei algumas coisas que eu queria fazer diferente
+não fui eu que desenvolveu o servidor pois era um curso/aplicação voltado para front-ent por isso o professor disponibilizou um servidor já pronto e eu só mudei algumas coisas que eu queria fazer diferente
 
 
 
